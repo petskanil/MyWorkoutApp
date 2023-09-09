@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="@dimen/main_screen_padding"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_home_screen"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Start image"
+        android:src="@drawable/front_page_image"
+        />
+    <FrameLayout
+        android:id="@+id/fl_start"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_home_screen"
+        android:layout_marginTop="50dp"
+        android:contentDescription="Start button"
+        android:background="@drawable/item_color_accent_border_ripple_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Start"
+            android:gravity="center"
+            android:textSize="@dimen/default_text_size_button"
+            android:textColor="@color/black"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
